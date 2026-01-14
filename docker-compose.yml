@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # Challenge 1: SQL Injection
+  sqli:
+    build: ./challenges/sqli
+    ports:
+      - "10101:80"
+    container_name: ctf-sqli
+    restart: unless-stopped
+
+  # Challenge 2: Local File Inclusion (LFI)
+  lfi:
+    build: ./challenges/lfi
+    ports:
+      - "10102:80"
+    container_name: ctf-lfi
+    restart: unless-stopped
+
+  # Challenge 3: Local File Disclosure (LFD)
+  lfd:
+    build: ./challenges/lfd
+    ports:
+      - "10103:80"
+    container_name: ctf-lfd
+    restart: unless-stopped
+
+  # Challenge 4: Remote Code Execution (RCE)
+  rce:
+    build: ./challenges/rce
+    ports:
+      - "10104:80"
+    container_name: ctf-rce
+    restart: unless-stopped
+
+  # Challenge 5: Server Side Template Injection (SSTI)
+  ssti:
+    build: ./challenges/ssti
+    ports:
+      - "10105:80"
+    container_name: ctf-ssti
+    restart: unless-stopped
+
+  # Challenge 6: Cross-Site Scripting (XSS) with Bot
+  xss:
+    build: ./challenges/xss
+    ports:
+      - "10106:80"
+    container_name: ctf-xss
+    restart: unless-stopped
+
+  # Challenge 7: Mass Assignment / Privilege Escalation
+  mass-assignment:
+    build: ./challenges/mass-assignment
+    ports:
+      - "10107:80"
+    container_name: ctf-mass-assignment
+    restart: unless-stopped
